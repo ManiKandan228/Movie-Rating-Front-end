@@ -8,7 +8,7 @@ const SearchMovieComponent = ({ setMovies }) => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`http://localhost:3500/api/v1/movies?${searchType}=${searchTerm}`);
+      const response = await axios.get(`https://movie-rating-back-end.vercel.app/api/v1/movies?${searchType}=${searchTerm}`);
 
       let filteredMovies = response.data;
 

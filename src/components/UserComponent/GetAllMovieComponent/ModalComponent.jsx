@@ -7,7 +7,7 @@ const ModalComponent = ({ movie, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
         <div className="modal-details">
-          <img src={`http://localhost:3500/img/${movie._id}`} alt={`${movie.movie_name} Poster`} />
+        <img src={`https://movie-rating-back-end.vercel.app/img/${movie._id}`} alt={`${movie.movie_name} Poster`} />
           <h2>{movie.movie_name}</h2>
           <p className="modal-rating">{movie.rating} <span className="star">★</span></p>
           <p className="modal-year">{movie.year}</p>

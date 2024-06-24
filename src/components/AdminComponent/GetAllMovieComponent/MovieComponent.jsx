@@ -16,7 +16,7 @@ const MovieComponent = ({ movie }) => {
   return (
     <>
       <div className="card" onClick={handleCardClick}>
-        <img src={`http://localhost:3500/img/${movie._id}`} alt={`${movie.movie_name} Poster`} />
+      <img src={`https://movie-rating-back-end.vercel.app/img/${movie._id}`} alt={`${movie.movie_name} Poster`} />
         <div className="overlay">
           <div className="text-container">
             <h3>{movie.movie_name}</h3>

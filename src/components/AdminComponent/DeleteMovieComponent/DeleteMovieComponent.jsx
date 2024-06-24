@@ -24,7 +24,7 @@ const DeleteMovieComponent = () => {
 
 
   const idValidator = () => {
-    axios.post(`http://localhost:3500/api/v1/movies/validate`,{id: movieInfo.id})
+    axios.post(`https://movie-rating-back-end.vercel.app/api/v1/movies/validate`,{id: movieInfo.id})
     .then((response)=>
     {
       setMovieInfo({

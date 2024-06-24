@@ -35,11 +35,12 @@ const AddNewMovieComponent = () => {
       formData.append(key, movieInfo[key]);
     }
 
-    axios.post('http://localhost:3500/api/v1/movies', formData, {
+    axios.post('https://movie-rating-back-end.vercel.app/api/v1/movies', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
     })
+    
       .then((response) => {
         alert(`${response.data.data.movie_name} is added successfully`);
         window.location.href = '/admin';

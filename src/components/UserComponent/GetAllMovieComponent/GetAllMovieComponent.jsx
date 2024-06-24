@@ -8,7 +8,7 @@ const GetAllMovieComponent = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3500/api/v1/movies')
+    axios.get('https://movie-rating-back-end.vercel.app/api/v1/movies')
       .then((response) => {
         const sortedMovies = response.data.sort((a, b) => a.id - b.id);
         setMovies(sortedMovies);
